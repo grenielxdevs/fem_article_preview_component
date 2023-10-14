@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --v-dark-blue: hsl(217, 19%, 35%);
+    --d-dark-blue: hsl(214, 17%, 51%);
+    --n-grayish-blue: hsl(212, 23%, 69%);
+    --l-grayish-blue: hsl(210, 46%, 95%);
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--l-grayish-blue);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    color: var(--v-dark-blue);
+}
+
+/* General Styles */
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    max-width: 800px;
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card .card-image {
+    width: 35%;
+    background: url('./images/drawers.jpg') left no-repeat;
+    background-size: cover;
+    border-radius: 16px 0 0 16px;
+}
+
+.card .card-content {
+    width: 65%;
+    padding: 30px 40px;
+}
+
+.card .card-content .card-content-top {
+    margin: 0 0 20px;
+}
+
+.card .card-content .card-content-top h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+
+.card .card-content .card-content-top p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.card .card-content .card-content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-content .card-content-bottom .avatar {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.card .card-content .card-content-bottom h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card .card-content .card-content-bottom p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.card .card-content .card-content-bottom .column:first-child {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.card .card-content .card-content-bottom .column:nth-child(2) {
+    width: 90%;
+}
+
+.card .card-content .card-content-bottom .column:last-child {
+    position: relative;
+    width: 40px;
+}
+
+.card .card-content .card-content-bottom .column:last-child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--l-grayish-blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.card .card-content .card-content-bottom .column:last-child a img {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.card .card-content .card-content-bottom .column:last-child .share {
+    position: absolute;
+    width: 150px;
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
