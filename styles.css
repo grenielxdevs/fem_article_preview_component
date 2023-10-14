@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 50px;
 }
 
 /* Card Styles */
@@ -124,8 +125,53 @@ body {
 
 .card .card-content .card-content-bottom .column:last-child .share {
     position: absolute;
-    width: 150px;
+    top: -65px;
+    left: -81px;
+    width: 200px;
     display: none;
+}
+
+.card .card-content .card-content-bottom .column:last-child .arrow-down {
+    position: absolute;
+    display: none;
+}
+
+.card .card-content .card-content-bottom .column:last-child .arrow-down.show {
+    display: block;
+    bottom: 45px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    color: var(--v-dark-blue);
+    z-index: 1;
+}
+
+.card .card-content .card-content-bottom .column:last-child .share.show {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--v-dark-blue);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.card .card-content .card-content-bottom .column:last-child .share.show a {
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    padding: 0;
+    color: var(--l-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.card .card-content .card-content-bottom .column:last-child .share.show a img {
+    width: 15px;
+    height: 15px;
+    margin: 3px 0 0;
 }
 
 .attribution { 
