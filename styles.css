@@ -116,6 +116,15 @@ body {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: all 0.5s ease;
+}
+
+.card .card-content .card-content-bottom .column:last-child a:hover {
+    opacity: 0.95;
+}
+
+.card .card-content .card-content-bottom .column:last-child a.share-btn:hover {
+    background-color: var(--n-grayish-blue);
 }
 
 .card .card-content .card-content-bottom .column:last-child a img {
@@ -131,9 +140,19 @@ body {
     display: none;
 }
 
+.card .card-content .card-content-bottom .column:last-child .share-btn.active {
+    background-color: var(--d-dark-blue);
+}
+
+.card .card-content .card-content-bottom .column:last-child .share-btn.active svg,
+.card .card-content .card-content-bottom .column:last-child .share-btn.active svg path {
+    fill: var(--white)
+}
+
 .card .card-content .card-content-bottom .column:last-child .arrow-down {
     position: absolute;
     display: none;
+    transition: all 0.5s ease;
 }
 
 .card .card-content .card-content-bottom .column:last-child .arrow-down.show {
@@ -174,6 +193,8 @@ body {
     margin: 3px 0 0;
 }
 
+
+/* Footer Styles */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
